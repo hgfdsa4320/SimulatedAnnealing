@@ -166,9 +166,10 @@ public class SimulatedAnnealing {
 -2*x*x*x+4*x+2
 ```
 
-![2021-06-11 (3)](C:\Users\asd\OneDrive\사진\스크린샷\2021-06-11 (3).png)
+![2021-06-11 (6)](https://user-images.githubusercontent.com/80511046/121678403-18afc180-caf2-11eb-952d-cdf7853b2a6b.png)
+![2021-06-11 (7)](https://user-images.githubusercontent.com/80511046/121678435-25ccb080-caf2-11eb-8a80-37975550279f.png)
 
-![image-20210611133231785](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611133231785.png)
+![image](https://user-images.githubusercontent.com/80511046/121678125-c40c4680-caf1-11eb-9aa4-02bef6452c10.png)
 
 **이와 같이 최저점에 수렴한다.**
 
@@ -178,11 +179,11 @@ public class SimulatedAnnealing {
 
 **서울시 1인가구 비율이 매년 증가하고 있다.**
 
-![image-20210611163917681](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611163917681.png)
+![image](https://user-images.githubusercontent.com/80511046/121678548-46950600-caf2-11eb-8c31-1b39ecbc594e.png)
 
 **여기서 독립변수 X를 년도로 뒀고 예측량 혹은 Y를 서울시 1인가구 비율로 두었다.**
 
-![image-20210611182326880](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611182326880.png)
+![image](https://user-images.githubusercontent.com/80511046/121678606-557bb880-caf2-11eb-8bb7-e3ed68754d63.png)
 
 
 
