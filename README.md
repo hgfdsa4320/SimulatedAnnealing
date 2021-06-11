@@ -112,9 +112,9 @@ public class SimulatedAnnealing {
 
 ## 성능 분석 및 결과
 
-![2021-06-11 (2)](https://user-images.githubusercontent.com/80511046/121675209-121f4b00-caee-11eb-92c9-c07e1ea01a8b.png)
+![2021-06-11 (9)](https://user-images.githubusercontent.com/80511046/121702430-d47dea80-cb0c-11eb-909f-af4093f17033.png)
 
-![image](https://user-images.githubusercontent.com/80511046/121675518-76420f00-caee-11eb-9985-ade2ee14a2b6.png)
+![image](https://user-images.githubusercontent.com/80511046/121702225-a7313c80-cb0c-11eb-98a7-650b6b41bd07.png)
 
 **(t=1, a=0.98, niter=100, p0=0.0001)**
 
