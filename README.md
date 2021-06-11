@@ -15,6 +15,7 @@
 - 성능 분석 및 결과
 - 회귀(regression)
 
+
 ## 알고리즘
 
 ### Simulated Annealing(담금질 기법)
@@ -23,6 +24,7 @@
 ![image](https://user-images.githubusercontent.com/80511046/121675121-f025c880-caed-11eb-951e-dbe9700931bc.png)
 
 **높은 T에서의 초기탐색은 최솟값을 찾는데도 불구하고 확률 개념을 도입하여 현재 해의  이웃해 중에서 현재 해보다 나쁜해로 이동하는 자유로움을 보인다. 그러나 T가 낮아지면서 점차 탐색은 아래방향으로 향하는데 이는 T가 낮아질수록 위방으로 이동하는 확률이 점차 작아진다는 것이다.**
+
 
 
 ## 전체 코드
@@ -110,6 +112,7 @@ public class SimulatedAnnealing {
 **초기 후보해와 이웃해를 각각 랜덤함수로 받고 isNeighborBetter함수로  더 나은 함수를 선택 하는데 만약 이웃해가 초기 후보해보다 좋다면 후보해를 이웃해로 바꾸고, 기존해가 이웃해보다 더 낫더라도 일정 확률로 바꿀 수 있다.**
 
 
+
 ## 성능 분석 및 결과
 
 ![2021-06-11 (9)](https://user-images.githubusercontent.com/80511046/121702430-d47dea80-cb0c-11eb-909f-af4093f17033.png)
@@ -184,6 +187,7 @@ public class SimulatedAnnealing {
 **(t=1, a=0.98, niter=100, p0=0.0001)**
 
 **이와 같이 최저점에 수렴한다.**
+
 
 ### 회귀(regression)
 
