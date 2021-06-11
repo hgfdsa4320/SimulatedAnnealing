@@ -19,7 +19,9 @@
 
 ### Simulated Annealing(담금질 기법)
 
-**모의 담금질(Simulated Annealing) 기법은 높은 온도에서 액체 상태인 물질이 온도가 점차 낮아지면서 결정체로 변하는 과정을 모방한 해 탐색 알고리즘이다 .온도가 점점 낮아지면 분자의 움직임이 점점 줄어들어 결정체가 되는데, 해 탐색 과정도 이와 유사하게 점점 더 규칙적인 방식으로 이루어진다.이러한 방식으로 해를 탐색하려면, 후보해에 대해 이웃하는 해 (이웃해)를 정의하여야 한다.** ![(null)](file:///C:\Users\asd\AppData\Local\Temp\cif00001.png)  
+**모의 담금질(Simulated Annealing) 기법은 높은 온도에서 액체 상태인 물질이 온도가 점차 낮아지면서 결정체로 변하는 과정을 모방한 해 탐색 알고리즘이다 .온도가 점점 낮아지면 분자의 움직임이 점점 줄어들어 결정체가 되는데, 해 탐색 과정도 이와 유사하게 점점 더 규칙적인 방식으로 이루어진다.이러한 방식으로 해를 탐색하려면, 후보해에 대해 이웃하는 해 (이웃해)를 정의하여야 한다.**
+![image](https://user-images.githubusercontent.com/80511046/121675121-f025c880-caed-11eb-951e-dbe9700931bc.png)
+
 
 
 
@@ -110,33 +112,31 @@ public class SimulatedAnnealing {
 
 ## 성능 분석 및 결과
 
-![2021-06-11 (2)](C:\Users\asd\OneDrive\사진\스크린샷\2021-06-11 (2).png)
+![2021-06-11 (2)](https://user-images.githubusercontent.com/80511046/121675209-121f4b00-caee-11eb-92c9-c07e1ea01a8b.png)
 
-![image-20210611124618530](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611124618530.png)
+![image](https://user-images.githubusercontent.com/80511046/121675518-76420f00-caee-11eb-9985-ade2ee14a2b6.png)
+
 
 **p0값이 작아서 성능이 너무 잘나왔다. p0값을 0.0001->0.001로 바꿔주면,**
 
-![image-20210611125738638](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611125738638.png)
+![image](https://user-images.githubusercontent.com/80511046/121675996-126c1600-caef-11eb-9412-b5db2e5a850d.png)
 
 **이와 같이 수행횟수가 약간 더 늘었다.**
 
 **이번에는 p0값을 0.001->0.005로 바꾸어 주었다.**
 
-![image-20210611130627391](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611130627391.png)
+![image](https://user-images.githubusercontent.com/80511046/121676715-eac97d80-caef-11eb-9094-3c3438a7e33b.png)
 
 
 
-**이와 같이 수행횟수도 늘어나고 위에서는 더 좋은 값으로만 가는 모습을 보였지만, p0가 커짐에 따라 현재해보다**
+**이와 같이 수행횟수도 늘어나고 위에서는 더 좋은 값으로만 가는 모습을 보였지만, p0가 커짐에 따라 현재해보다** **나쁜 곳도 갔다오면서 최종적으로 최적점 값에 수렴하는 모습이다.**
 
-**나쁜 곳도 갔다오면서 최종적으로 최적점 값에 수렴하는 모습이다.**
 
 **이번에는 마지막으로 p0를 좀 많이 크게 해보았다. p0=0.1**
 
-![image-20210611171304727](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611171304727.png)
+![image](https://user-images.githubusercontent.com/80511046/121677026-4eec4180-caf0-11eb-9e30-515d2c7c85f9.png)
 
-**이와 같이 수행 횟수도 굉장히 맣이 늘어나고 결과값도 위에 있는 것들과는 달리 최적점과의 차이가 꽤 많이 났다.**
-
-**이것으로 p0를 너무 크게 하면 최적점을 얻을 수 없다는 결론을 얻었다.**
+**이와 같이 수행 횟수도 굉장히 맣이 늘어나고 결과값도 위에 있는 것들과는 달리 최적점과의 차이가 꽤 많이 났다.** **이것으로 p0를 너무 크게 하면 최적점을 얻을 수 없다는 결론을 얻었다.**
 
 
 
@@ -146,15 +146,15 @@ public class SimulatedAnnealing {
 
 **일반적으로 a는 0.99에 가까운 수로 선택하여, T가 천천히 감소되도록 한다.** 
 
-**a를 0.99->0.9로 변화시켜 보았다.**
+**a를 0.98->0.9로 변화시켜 보았다.**
 
-![image-20210611132204246](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611132204246.png)
+![image](https://user-images.githubusercontent.com/80511046/121677356-b7d3b980-caf0-11eb-9807-f45981438de8.png)
 
-**위의 그래프와 차이가 거의 없다.**
+**위의 그래프와 큰 차이 없이 최적점에 수렴한다.**
 
 **이번에는 a를 0.9->0.8로 변화시켜 보았다.**
 
-![image-20210611132355839](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611132355839.png) 
+![image](https://user-images.githubusercontent.com/80511046/121677616-1305ac00-caf1-11eb-9fae-95a0504a9913.png)
 
 **약간의 횟수감소가 있고 큰 변화는 없어보인다.**
 
