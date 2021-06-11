@@ -6,7 +6,7 @@
 
 ------
 
-#### 목차
+### 목차
 
 ------
 
@@ -88,7 +88,7 @@ public class SimulatedAnnealing {
                 double x1 = r.nextDouble() * (upper - lower) + lower;    // 이웃해 (lower~upper)
                 double f1 = p.fit(x1);
                 if(p.isNeighborBetter(f0, f1)) {    // 이웃해가 초기후보해 보다 나을경우
-                    x0 = x1;   //후보해를 이우해로 바꿈
+                    x0 = x1;   //후보해를 이웃해로 바꿈
                     f0 = f1;
                     hist.add(f0);
                 } else {    // 기존해가 이웃해보다 더 나을 경우
@@ -115,6 +115,7 @@ public class SimulatedAnnealing {
 ![2021-06-11 (2)](https://user-images.githubusercontent.com/80511046/121675209-121f4b00-caee-11eb-92c9-c07e1ea01a8b.png)
 
 ![image](https://user-images.githubusercontent.com/80511046/121675518-76420f00-caee-11eb-9985-ade2ee14a2b6.png)
+
 **(t=1, a=0.98, niter=100, p0=0.0001)**
 
 **p0값이 작아서 성능이 너무 잘나왔다. p0값을 0.0001->0.001로 바꿔주면,**
@@ -192,7 +193,7 @@ public class SimulatedAnnealing {
 
 ![image](https://user-images.githubusercontent.com/80511046/121678548-46950600-caf2-11eb-8c31-1b39ecbc594e.png)
 
-**여기서 독립변수 X를 년도로 뒀고 예측량 혹은 Y를 서울시 1인가구 비율로 두었다.**
+**여기서 독립변수 X를 년도로 뒀고 종속변수 Y를 서울시 1인가구 비율로 두었다.**
 
 ![image](https://user-images.githubusercontent.com/80511046/121678606-557bb880-caf2-11eb-8bb7-e3ed68754d63.png)
 
