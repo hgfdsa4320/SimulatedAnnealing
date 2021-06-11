@@ -107,7 +107,7 @@ public class SimulatedAnnealing {
     }
 }
 ```
-
+**초기 후보해와 이웃해를 각각 랜덤함수로 받고 isNeighborBetter함수로  더 나은 함수를 선택 하는데 만약 이웃해가 초기 우수해보다 좋다면 후보해를 우수해로 바꾸고, 기존해가 이웃해보다 더 낫더라도 일정 확률로 바꿀 수 있다.**
 
 
 ## 성능 분석 및 결과
@@ -115,12 +115,13 @@ public class SimulatedAnnealing {
 ![2021-06-11 (2)](https://user-images.githubusercontent.com/80511046/121675209-121f4b00-caee-11eb-92c9-c07e1ea01a8b.png)
 
 ![image](https://user-images.githubusercontent.com/80511046/121675518-76420f00-caee-11eb-9985-ade2ee14a2b6.png)
-
+**(t=1, a=0.98, niter=100, p0=0.0001)**
 
 **p0값이 작아서 성능이 너무 잘나왔다. p0값을 0.0001->0.001로 바꿔주면,**
 
 ![image](https://user-images.githubusercontent.com/80511046/121675996-126c1600-caef-11eb-9412-b5db2e5a850d.png)
 
+**(t=1, a=0.98, niter=100, p0=0.001)**
 **이와 같이 수행횟수가 약간 더 늘었다.**
 
 **이번에는 p0값을 0.001->0.005로 바꾸어 주었다.**
@@ -128,7 +129,7 @@ public class SimulatedAnnealing {
 ![image](https://user-images.githubusercontent.com/80511046/121676715-eac97d80-caef-11eb-9094-3c3438a7e33b.png)
 
 
-
+**(t=1, a=0.98, niter=100, p0=0.005)**
 **이와 같이 수행횟수도 늘어나고 위에서는 더 좋은 값으로만 가는 모습을 보였지만, p0가 커짐에 따라 현재해보다** **나쁜 곳도 갔다오면서 최종적으로 최적점 값에 수렴하는 모습이다.**
 
 
@@ -136,6 +137,7 @@ public class SimulatedAnnealing {
 
 ![image](https://user-images.githubusercontent.com/80511046/121677026-4eec4180-caf0-11eb-9e30-515d2c7c85f9.png)
 
+**(t=1, a=0.98, niter=100, p0=0.1)**
 **이와 같이 수행 횟수도 굉장히 맣이 늘어나고 결과값도 위에 있는 것들과는 달리 최적점과의 차이가 꽤 많이 났다.** **이것으로 p0를 너무 크게 하면 최적점을 얻을 수 없다는 결론을 얻었다.**
 
 
@@ -150,12 +152,14 @@ public class SimulatedAnnealing {
 
 ![image](https://user-images.githubusercontent.com/80511046/121677356-b7d3b980-caf0-11eb-9807-f45981438de8.png)
 
+**(t=1, a=0.9, niter=100, p0=0.0001)**
 **위의 그래프와 큰 차이 없이 최적점에 수렴한다.**
 
 **이번에는 a를 0.9->0.8로 변화시켜 보았다.**
 
 ![image](https://user-images.githubusercontent.com/80511046/121677616-1305ac00-caf1-11eb-9fae-95a0504a9913.png)
 
+**(t=1, a=0.8, niter=100, p0=0.0001)**
 **약간의 횟수감소가 있고 큰 변화는 없어보인다.**
 
 
@@ -171,6 +175,7 @@ public class SimulatedAnnealing {
 
 ![image](https://user-images.githubusercontent.com/80511046/121678125-c40c4680-caf1-11eb-9aa4-02bef6452c10.png)
 
+**(t=1, a=0.98, niter=100, p0=0.0001)**
 **이와 같이 최저점에 수렴한다.**
 
 ### 회귀(regression)
