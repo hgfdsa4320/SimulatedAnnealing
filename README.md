@@ -111,7 +111,6 @@ public class SimulatedAnnealing {
 ## 성능 분석 및 결과
 
 ![2021-06-11 (2)](C:\Users\asd\OneDrive\사진\스크린샷\2021-06-11 (2).png)
-https://github.com/hgfdsa4320/SimulatedAnnealing/blob/main/README.md
 
 ![image-20210611124618530](C:\Users\asd\AppData\Roaming\Typora\typora-user-images\image-20210611124618530.png)
 
